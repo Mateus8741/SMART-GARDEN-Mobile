@@ -7,7 +7,7 @@ import Background from "~/components/global/Background";
 import Content from "~/components/global/Content";
 import Logo from "~/components/global/Logo";
 import ContainerForm from "~/components/global/ContainerForm";
-import InputArea from "~/components/global/InputForm/index";
+import InputForm from "~/components/global/InputForm/index";
 import Input from "~/components/global/Input/index";
 import Button from "~/components/global/Button";
 import Link from "~/components/global/Link";
@@ -29,22 +29,22 @@ export default function Login() {
       <Content>
         <Logo />
         <ContainerForm>
-          <InputArea>
+          <InputForm>
             <MaterialCommunityIcons
               name="email-outline"
               size={20}
               color={colorPrimary}
             />
             <Input campo="Email" setValue={setEmail} />
-          </InputArea>
-          <InputArea>
+          </InputForm>
+          <InputForm>
             <Ionicons
               name="lock-closed-outline"
               size={20}
               color={colorPrimary}
             />
             <Input ocultarCampo campo="Senha" setValue={setSenha} />
-          </InputArea>
+          </InputForm>
         </ContainerForm>
         <Button onPress={handleLogin} style={{ marginTop: 25 }}>
           Logar

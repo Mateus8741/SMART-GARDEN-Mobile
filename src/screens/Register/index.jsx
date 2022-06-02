@@ -4,7 +4,7 @@ import Background from '~/components/global/Background';
 import Content from '~/components/global/Content';
 import Logo from '~/components/global/Logo';
 import ContainerForm from '~/components/global/ContainerForm';
-import InputArea from '~/components/global/InputForm/index';
+import InputForm from '~/components/global/InputForm/index';
 import Input from '~/components/global/Input/index';
 import Button from '~/components/global/Button/index';
 import Link from '~/components/global/Link';
@@ -30,27 +30,27 @@ export default function Register() {
       <Content>
         <Logo />
         <ContainerForm>
-          <InputArea>
+          <InputForm padding={12}>
             <AntDesign name="user" size={20} color={colorPrimary} />
             <Input campo="Nome" setValue={setNome} />
-          </InputArea>
-          <InputArea>
+          </InputForm>
+          <InputForm padding={12}>
             <MaterialCommunityIcons
               name="email-outline"
               size={20}
               color={colorPrimary}
             />
             <Input campo="Email" setValue={setEmail} />
-          </InputArea>
-          <InputArea>
+          </InputForm>
+          <InputForm padding={12}>
             <Ionicons
               name="lock-closed-outline"
               size={20}
               color={colorPrimary}
             />
             <Input ocultarCampo={true} campo="Senha" setValue={setSenha} />
-          </InputArea>
-          <InputArea>
+          </InputForm>
+          <InputForm padding={12}>
             <Ionicons
               name="lock-closed-outline"
               size={20}
@@ -61,7 +61,7 @@ export default function Register() {
               campo="Confirmar senha"
               setValue={setConfirmarSenha}
             />
-          </InputArea>
+          </InputForm>
         </ContainerForm>
         <Button
           onPress={handleCadastro}

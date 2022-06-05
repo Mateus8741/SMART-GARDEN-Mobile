@@ -30,11 +30,11 @@ export default function Register() {
       <Content>
         <Logo />
         <ContainerForm>
-          <InputForm padding={12}>
+          <InputForm padding={10}>
             <AntDesign name="user" size={20} color={colorPrimary} />
             <Input campo="Nome" setValue={setNome} />
           </InputForm>
-          <InputForm padding={12}>
+          <InputForm padding={10}>
             <MaterialCommunityIcons
               name="email-outline"
               size={20}
@@ -42,7 +42,7 @@ export default function Register() {
             />
             <Input campo="Email" setValue={setEmail} />
           </InputForm>
-          <InputForm padding={12}>
+          <InputForm padding={10}>
             <Ionicons
               name="lock-closed-outline"
               size={20}
@@ -50,7 +50,7 @@ export default function Register() {
             />
             <Input ocultarCampo={true} campo="Senha" setValue={setSenha} />
           </InputForm>
-          <InputForm padding={12}>
+          <InputForm padding={10}>
             <Ionicons
               name="lock-closed-outline"
               size={20}

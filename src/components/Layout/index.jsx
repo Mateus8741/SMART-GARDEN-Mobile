@@ -8,7 +8,7 @@ import * as Colors from "../UI/variaveis";
 export default function Layout({ children }) {
   return (
     <SafeAreaView>
-      <StatusBar backgroundColor={Colors.colorStatusBar} style="auto" />
+      <StatusBar backgroundColor={Colors.colorGreenLight} style="auto" />
       <Header />
       <Main>{children}</Main>
     </SafeAreaView>

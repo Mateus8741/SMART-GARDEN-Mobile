@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import { StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons } from '@expo/vector-icons';
 
-import * as Colors from "../../UI/variaveis";
+import * as Colors from '../../UI/variaveis';
 
 export default function Input({
   campo,
@@ -23,7 +23,6 @@ export default function Input({
         placeholderTextColor={Colors.colorGray}
         secureTextEntry={ocultarCampo}
         value={setValue}
-        // onChangeText={(value) => setValue(value)}
       />
       {ocultarCampo === true ? (
         <TouchableOpacity onPress={handleAction}>
@@ -33,7 +32,7 @@ export default function Input({
               paddingLeft: 10,
               fontSize: 25,
             }}
-            name={icon ? "eye-off" : "eye"}
+            name={icon ? 'eye-off' : 'eye'}
           />
         </TouchableOpacity>
       ) : null}
@@ -43,7 +42,7 @@ export default function Input({
 
 export const style = StyleSheet.create({
   input: {
-    width: "75%",
+    width: '75%',
     marginLeft: 10,
     fontSize: 18,
   },

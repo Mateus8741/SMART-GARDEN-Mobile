@@ -1,17 +1,56 @@
 import React from 'react';
 import { View } from 'react-native';
-import Button from '~/components/global/Button';
-import Input from '~/components/global/Input';
-import InputForm from '~/components/global/InputForm';
+import Button from '~/components/global/Button/index';
+import Input from '~/components/global/Input/index';
+import InputForm from '~/components/global/InputForm/index';
 import Layout from '~/components/Layout/index';
-import { TitleScreens } from '~/components/TitleScreens';
-import * as Colors from '../../components/UI/variaveis';
-import * as Style from './styles';
+import * as ST from './styles';
 
 export default function CultivationArea() {
   return (
     <Layout>
-      <TitleScreens style={{ padding: 10 }}>Área de cultivo</TitleScreens>
+      <ST.Container>
+        <ST.Title>Nova área de cultivo</ST.Title>
+        <View>
+          <ST.Label>Nome</ST.Label>
+          <InputForm padding={3}>
+            <Input campo="nome da área" />
+          </InputForm>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+          }}
+        >
+          <View style={{ width: `${Platform.OS === 'ios' ? 43 : 45}%` }}>
+            <ST.Label>Tamanho em m²</ST.Label>
+            <InputForm padding={3}>
+              <Input keyboardType="numeric" campo="tamanho" />
+            </InputForm>
+          </View>
+          <View style={{ width: `${Platform.OS === 'ios' ? 43 : 45}%` }}>
+            <ST.Label>Qtd de Irigadores</ST.Label>
+            <InputForm padding={3}>
+              <Input keyboardType="numeric" campo="irrigadores" />
+            </InputForm>
+          </View>
+        </View>
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+            marginTop: 20,
+          }}
+        >
+          <View style={{ width: '40%' }}>
+            <Button style={{ backgroundColor: '#EB4559' }}>Cancelar</Button>
+          </View>
+          <View style={{ width: '40%' }}>
+            <Button style={{ backgroundColor: '#019267' }}>Salvar</Button>
+          </View>
+        </View>
+      </ST.Container>
     </Layout>
   );
 }

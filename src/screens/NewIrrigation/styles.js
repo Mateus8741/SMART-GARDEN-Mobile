@@ -6,11 +6,11 @@ import * as Colors from '~/components/UI/variaveis';
 
 export const Container = styled.View`
   width: 90%;
-  height: ${Platform.OS === 'ios' ? RFValue(510) : RFValue(550)}px;
   margin: 20px auto;
   background-color: ${Colors.colorBgPrimary};
   border-radius: 20px;
   padding: 20px;
+  padding-bottom: 30px;
   margin-bottom: 10px;
 `;
 

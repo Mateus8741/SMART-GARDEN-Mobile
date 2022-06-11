@@ -12,6 +12,7 @@ import Plant from '~screens/Plant';
 import Plantation from '~screens/Plantation';
 import Irrigation from '~screens/Irrigation';
 import ThisMonth from '~screens/ThisMonth';
+import Layout from '../Layout/index';
 
 export default function TabNavigation() {
   const Tab = createBottomTabNavigator();
@@ -19,13 +20,13 @@ export default function TabNavigation() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
-      screenOptions={{ 
-        headerShown: false, 
+      screenOptions={{
+        headerShown: false,
         tabBarStyle: {
-          borderTopWidth: 0
-        }
+          borderTopWidth: 0,
+        },
       }}
-      sceneContainerStyle ={{
+      sceneContainerStyle={{
         borderTopColor: 'transparent',
       }}
       tabBarOptions={{
@@ -37,38 +38,54 @@ export default function TabNavigation() {
         keyboardHidesTabBar: true,
       }}
     >
-      <Tab.Screen name="Home" component={Home}
-      options={{
-        tabBarIcon: ({size, color}) => (
-          <Feather name="home" size={size} color={color} />
-        )
-      }} />
-      <Tab.Screen name="Plantation" component={Plantation} 
-      options={{
-        tabBarIcon: ({size, color}) => (
-          <MaterialCommunityIcons name="progress-check" size={size} color={color} />
-        )
-      }} 
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <Feather name="home" size={size} color={color} />
+          ),
+        }}
       />
-      <Tab.Screen name="Plant" component={Plant}
-      options={{
-        tabBarIcon: ({size, color}) => (
-          <ButtonNew size={size} color={color} />
-        )
-      }} 
+      <Tab.Screen
+        name="Plantation"
+        component={Plantation}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <MaterialCommunityIcons
+              name="progress-check"
+              size={size}
+              color={color}
+            />
+          ),
+        }}
       />
-      <Tab.Screen name="Irrigation" component={Irrigation} 
-      options={{
-        tabBarIcon: ({size, color}) => (
-          <Entypo name="water" size={size} color={color}/>        
-        )
-      }}  />
-      <Tab.Screen name="Sugestao" component={ThisMonth}
-      options={{
-        tabBarIcon: ({size, color}) => (
-          <AntDesign name="calendar" size={size} color={color}  />
-        )
-      }} 
+      <Tab.Screen
+        name="Plant"
+        component={Plant}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <ButtonNew size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Irrigation"
+        component={Irrigation}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <Entypo name="water" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Sugestao"
+        component={ThisMonth}
+        options={{
+          tabBarIcon: ({ size, color }) => (
+            <AntDesign name="calendar" size={size} color={color} />
+          ),
+        }}
       />
     </Tab.Navigator>
   );

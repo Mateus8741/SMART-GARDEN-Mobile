@@ -70,16 +70,3 @@ export const Link = styled.Text`
   margin-top: 10px;
   font-weight: 900;
 `;
-
-export const BtnPlantar = styled.TouchableOpacity`
-  background-color: ${colorPrimary};
-  padding: 15px;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const TextBtn = styled.Text`
-  color: ${colorWhite};
-  font-size: 16px;
-`;

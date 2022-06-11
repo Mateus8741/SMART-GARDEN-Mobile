@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "~/components/Layout";
+import Layout from '~/components/Layout';
 
-import { FlatList } from "react-native";
+import { FlatList } from 'react-native';
 
-import { Feather } from "@expo/vector-icons";
+import { Feather } from '@expo/vector-icons';
 
-import { TitleScreens } from "~/components/TitleScreens";
+import { TitleScreens } from '~/components/TitleScreens';
 
-import { Platform } from "react-native";
+import { Platform } from 'react-native';
 
-import { ProgressBar } from "react-native-paper";
+import { ProgressBar } from 'react-native-paper';
 
-import { RFPercentage } from "react-native-responsive-fontsize";
+import { RFPercentage } from 'react-native-responsive-fontsize';
 
 import {
   SearchBar,
@@ -26,46 +26,46 @@ import {
   FlexContent,
   MoreOptions,
   Icons,
-} from "./styles";
+} from './styles';
 
-import * as Colors from "../../components/UI/variaveis";
+import * as Colors from '../../components/UI/variaveis';
 
-import banana from "../../../assets/plantation/banana.png";
-import lettuce from "../../../assets/plantation/lettuce.png";
+import banana from '../../../assets/plantation/banana.png';
+import lettuce from '../../../assets/plantation/lettuce.png';
 
 export default function Plantation() {
   const products = [
     {
       id: 1,
-      nome: "Banana",
-      categoria: "Frutas",
+      nome: 'Banana',
+      categoria: 'Frutas',
       img: banana,
-      colheita: "330 a 450 dias",
-      progresso: "30",
+      colheita: '330 a 450 dias',
+      progresso: '30',
     },
     {
       id: 2,
-      nome: "Alface",
-      categoria: "Frutas",
+      nome: 'Alface',
+      categoria: 'Frutas',
       img: lettuce,
-      colheita: "330 a 450 dias",
-      progresso: "25",
+      colheita: '330 a 450 dias',
+      progresso: '25',
     },
     {
       id: 3,
-      nome: "Banana",
-      categoria: "Frutas",
+      nome: 'Banana',
+      categoria: 'Frutas',
       img: banana,
-      colheita: "330 a 450 dias",
-      progresso: "10",
+      colheita: '330 a 450 dias',
+      progresso: '10',
     },
     {
       id: 4,
-      nome: "Alface",
-      categoria: "Frutas",
+      nome: 'Alface',
+      categoria: 'Frutas',
       img: lettuce,
-      colheita: "330 a 450 dias",
-      progresso: "50",
+      colheita: '330 a 450 dias',
+      progresso: '50',
     },
   ];
 
@@ -82,9 +82,9 @@ export default function Plantation() {
         style={{
           marginTop: 4,
           marginBottom:
-            Platform.OS === "ios"
+            Platform.OS === 'ios'
               ? `${RFPercentage(3)}%`
-              : `${RFPercentage(4.5)}%`,
+              : `${RFPercentage(4)}%`,
         }}
         data={products}
         renderItem={({ item, index }) => (
@@ -100,7 +100,10 @@ export default function Plantation() {
             <TextCard>Colheita: {item.colheita}</TextCard>
             <TextCard>Progresso: {item.progresso}%</TextCard>
             <ViewProgressBar>
-              <ProgressBar progress={item.progresso / 100} color={Colors.colorPrimary}  />
+              <ProgressBar
+                progress={item.progresso / 100}
+                color={Colors.colorPrimary}
+              />
             </ViewProgressBar>
           </CardProduct>
         )}

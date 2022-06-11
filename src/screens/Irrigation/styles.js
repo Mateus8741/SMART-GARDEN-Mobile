@@ -6,7 +6,7 @@ import {
 } from '~components/UI/variaveis';
 
 export const CardIrrigation = styled.View`
-  width: 95%;
+  width: 90%;
   height: 250px;
   margin: 2px auto;
   background-color: ${colorBgPrimary};

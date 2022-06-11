@@ -1,10 +1,10 @@
-import styled from "styled-components/native";
-import { DefaultTheme, css } from "styled-components";
-import { TouchableOpacity } from "react-native";
-import { RFValue } from "react-native-responsive-fontsize";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import styled from 'styled-components/native';
+import { css } from 'styled-components';
+import { TouchableOpacity } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { colorPrimary, colorWhite } from "../../UI/variaveis";
+import { colorPrimary, colorWhite } from '../../UI/variaveis';
 
 export const Container = styled(TouchableOpacity)`
   align-items: center;

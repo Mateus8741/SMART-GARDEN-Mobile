@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { View, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
-import { colorPrimary, colorWhite } from '~/components/UI/variaveis';
+import { colorPrimary } from '~/components/UI/variaveis';
 import Background from '~/components/global/Background';
 import Content from '~/components/global/Content';
 import Logo from '~/components/global/Logo';
 import ContainerForm from '~/components/global/ContainerForm';
-import InputForm from '~/components/global/InputForm/index';
+import InputForm from '~/components/global/InputForm';
 import Input from '~/components/global/Input/index';
 import Button from '~/components/global/Button';
 import Link from '~/components/global/Link';
@@ -49,16 +49,17 @@ export default function Login() {
         <Button onPress={handleLogin} style={{ marginTop: 25 }}>
           Logar
         </Button>
-        <View
+        {/* <View
           style={{
             width: '90%',
             borderColor: colorWhite,
             borderWidth: 1,
             marginTop: 20,
           }}
-        ></View>
+        ></View> */}
         <View
           style={{
+            marginTop: 20,
             flexDirection: 'row',
           }}
         >

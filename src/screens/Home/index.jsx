@@ -1,6 +1,9 @@
 import React from 'react';
 import { Image, View } from 'react-native';
 import Layout from '~components/Layout';
+import { useNavigation } from '@react-navigation/native';
+import Button from '~/components/global/Button/';
+
 import {
   CardWelcome,
   TextWelcome,
@@ -10,12 +13,12 @@ import {
   TextTask,
   ContainerBtn,
   Link,
-  BtnPlantar,
-  TextBtn,
 } from './styles';
 import icon from '../../../assets/IconWelcomeHome.png';
 
 export default function Home() {
+  const navigation = useNavigation();
+
   return (
     <Layout>
       <CardWelcome>
@@ -35,9 +38,12 @@ export default function Home() {
         </NextTask>
         <ContainerBtn>
           <Link>Começar a plantar</Link>
-          <BtnPlantar>
-            <TextBtn>Área de Cultivo</TextBtn>
-          </BtnPlantar>
+          <Button
+            style={{ width: '50%', height: 45 }}
+            onPress={() => navigation.navigate('CultivationArea')}
+          >
+            Àrea de cultivo
+          </Button>
         </ContainerBtn>
       </CardTasks>
     </Layout>

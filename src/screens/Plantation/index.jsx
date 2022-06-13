@@ -22,53 +22,14 @@ import {
   ImgProduct,
   TextCard,
   ViewProgressBar,
-  BarPercentage,
   FlexContent,
-  MoreOptions,
   Icons,
 } from './styles';
 
 import * as Colors from '../../components/UI/variaveis';
-
-import banana from '../../../assets/plantation/banana.png';
-import lettuce from '../../../assets/plantation/lettuce.png';
+import { products } from '~/mocks/productos';
 
 export default function Plantation() {
-  const products = [
-    {
-      id: 1,
-      nome: 'Banana',
-      categoria: 'Frutas',
-      img: banana,
-      colheita: '330 a 450 dias',
-      progresso: '30',
-    },
-    {
-      id: 2,
-      nome: 'Alface',
-      categoria: 'Frutas',
-      img: lettuce,
-      colheita: '330 a 450 dias',
-      progresso: '25',
-    },
-    {
-      id: 3,
-      nome: 'Banana',
-      categoria: 'Frutas',
-      img: banana,
-      colheita: '330 a 450 dias',
-      progresso: '10',
-    },
-    {
-      id: 4,
-      nome: 'Alface',
-      categoria: 'Frutas',
-      img: lettuce,
-      colheita: '330 a 450 dias',
-      progresso: '50',
-    },
-  ];
-
   return (
     <Layout>
       <SearchBar>

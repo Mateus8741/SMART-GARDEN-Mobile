@@ -10,7 +10,7 @@ export default Link = ({ children, style, to }) => {
   return (
     <Text
       onPress={() => navigation.navigate(to)}
-      style={[styles.textoContent, style]}
+      style={[styles.textContent, style]}
     >
       {children}
     </Text>
@@ -18,7 +18,7 @@ export default Link = ({ children, style, to }) => {
 };
 
 export const styles = StyleSheet.create({
-  textoContent: {
+  textContent: {
     marginTop: 20,
     fontSize: RFValue(14),
     color: colorWhite,

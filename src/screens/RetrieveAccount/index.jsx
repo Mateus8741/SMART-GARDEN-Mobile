@@ -28,7 +28,7 @@ export default function RetrieveAccount() {
               size={20}
               color={Colors.colorPrimary}
             />
-            <Input campo="Email" setValue={setEmail} />
+            <Input placeholder="Email" setValue={setEmail} />
           </InputForm>
         </ContainerForm>
         <Button style={{ marginTop: 25 }}>Enviar</Button>

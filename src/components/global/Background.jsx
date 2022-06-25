@@ -1,17 +1,17 @@
 import React from 'react';
 import { StyleSheet, ImageBackground } from 'react-native';
-import fundo from '../../../assets/background01.jpg';
+import bg from '../../../assets/background01.jpg';
 
 export default Background = ({ children }) => {
   return (
-    <ImageBackground source={fundo} resizeMode="cover" style={style.fundo}>
+    <ImageBackground source={bg} resizeMode="cover" style={style.bg}>
       {children}
     </ImageBackground>
   );
 };
 
 export const style = StyleSheet.create({
-  fundo: {
+  bg: {
     flex: 1,
   },
 });

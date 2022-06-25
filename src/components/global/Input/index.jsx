@@ -7,9 +7,9 @@ import { Ionicons } from '@expo/vector-icons';
 import * as Colors from '../../UI/variaveis';
 
 export default function Input({
-  campo,
+  placeholder,
   setValue,
-  ocultarCampo,
+  hidevalues,
   icon,
   handleAction,
   keyboardType,
@@ -18,13 +18,13 @@ export default function Input({
     <>
       <TextInput
         style={style.input}
-        placeholder={campo}
+        placeholder={placeholder}
         keyboardType={keyboardType}
         placeholderTextColor={Colors.colorGray}
-        secureTextEntry={ocultarCampo}
+        secureTextEntry={hidevalues}
         value={setValue}
       />
-      {ocultarCampo === true ? (
+      {hidevalues === true ? (
         <TouchableOpacity onPress={handleAction}>
           <Ionicons
             style={{

@@ -4,4 +4,5 @@
 - [ ] Mudar campos dos inputs que estão em português para inglês
 - [ ] Excluir importações desnecessárias
 - [ ] Replicar tabNavigations em todas as telas
+- [ ] Criar menu lateral
 - [ ] Refatorar código das telas de inclusão (plantação, area de cultivo e irrigação) para reaproveirar o styled-components

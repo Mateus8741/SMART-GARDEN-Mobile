@@ -5,14 +5,14 @@ import logo from '../../../assets/LogoBranca.png';
 
 export default Logo = () => {
   return (
-    <View style={style.circuloLogo}>
+    <View style={style.circleLogo}>
       <Image style={style.logo} source={logo} />
     </View>
   );
 };
 
 export const style = StyleSheet.create({
-  circuloLogo: {
+  circleLogo: {
     width: 150,
     height: 150,
     alignItems: 'center',

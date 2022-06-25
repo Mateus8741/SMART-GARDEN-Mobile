@@ -35,7 +35,7 @@ export default function Login() {
               size={20}
               color={colorPrimary}
             />
-            <Input campo="Email" setValue={setEmail} />
+            <Input placeholder="Email" setValue={setEmail} />
           </InputForm>
           <InputForm padding={12}>
             <Ionicons
@@ -43,7 +43,7 @@ export default function Login() {
               size={20}
               color={colorPrimary}
             />
-            <Input ocultarCampo campo="Senha" setValue={setSenha} />
+            <Input hidevalues placeholder="Senha" setValue={setSenha} />
           </InputForm>
         </ContainerForm>
         <Button onPress={handleLogin} style={{ marginTop: 25 }}>

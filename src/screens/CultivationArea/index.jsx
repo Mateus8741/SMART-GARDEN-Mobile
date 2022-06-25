@@ -14,7 +14,7 @@ export default function CultivationArea() {
         <View>
           <ST.Label>Nome</ST.Label>
           <InputForm padding={3}>
-            <Input campo="nome da área" />
+            <Input placeholder="nome da área" />
           </InputForm>
         </View>
         <View
@@ -26,13 +26,13 @@ export default function CultivationArea() {
           <View style={{ width: `${Platform.OS === 'ios' ? 43 : 45}%` }}>
             <ST.Label>Tamanho em m²</ST.Label>
             <InputForm padding={3}>
-              <Input keyboardType="numeric" campo="tamanho" />
+              <Input keyboardType="numeric" placeholder="tamanho" />
             </InputForm>
           </View>
           <View style={{ width: `${Platform.OS === 'ios' ? 43 : 45}%` }}>
             <ST.Label>Qtd de Irigadores</ST.Label>
             <InputForm padding={3}>
-              <Input keyboardType="numeric" campo="irrigadores" />
+              <Input keyboardType="numeric" placeholder="irrigadores" />
             </InputForm>
           </View>
         </View>

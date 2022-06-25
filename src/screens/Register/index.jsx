@@ -32,7 +32,7 @@ export default function Register() {
         <ContainerForm>
           <InputForm padding={10}>
             <AntDesign name="user" size={20} color={colorPrimary} />
-            <Input campo="Nome" setValue={setNome} />
+            <Input placeholder="Nome" setValue={setNome} />
           </InputForm>
           <InputForm padding={10}>
             <MaterialCommunityIcons
@@ -40,7 +40,7 @@ export default function Register() {
               size={20}
               color={colorPrimary}
             />
-            <Input campo="Email" setValue={setEmail} />
+            <Input placeholder="Email" setValue={setEmail} />
           </InputForm>
           <InputForm padding={10}>
             <Ionicons
@@ -48,7 +48,7 @@ export default function Register() {
               size={20}
               color={colorPrimary}
             />
-            <Input ocultarCampo={true} campo="Senha" setValue={setSenha} />
+            <Input hidevalues={true} placeholder="Senha" setValue={setSenha} />
           </InputForm>
           <InputForm padding={10}>
             <Ionicons
@@ -57,8 +57,8 @@ export default function Register() {
               color={colorPrimary}
             />
             <Input
-              ocultarCampo={true}
-              campo="Confirmar senha"
+              hidevalues={true}
+              placeholder="Confirmar senha"
               setValue={setConfirmarSenha}
             />
           </InputForm>

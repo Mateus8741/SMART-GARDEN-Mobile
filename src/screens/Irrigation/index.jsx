@@ -5,14 +5,7 @@ import { Feather } from '@expo/vector-icons';
 import Button from '~/components/global/Button/';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import { useNavigation } from '@react-navigation/native';
-
-import {
-  CardIrrigation,
-  ImgProduct,
-  TextCard,
-  FlexContent,
-  Separator,
-} from './styles';
+import { CardIrrigation, ImgProduct, TextCard, FlexContent } from './styles';
 import { TitleScreens } from '~/components/TitleScreens';
 import { irrigations } from '~/mocks/irrigations';
 
@@ -36,7 +29,7 @@ export default function Irrigation() {
           marginBottom:
             Platform.OS === 'ios'
               ? `${RFPercentage(3)}%`
-              : `${RFPercentage(2)}%`,
+              : `${RFPercentage(5)}%`,
         }}
         data={irrigations}
         renderItem={({ item }) => (
@@ -55,8 +48,6 @@ export default function Irrigation() {
         )}
         keyExtractor={(item) => String(item.id)}
       />
-      <Separator />
-      <Button> Adicionar </Button>
     </Layout>
   );
 }

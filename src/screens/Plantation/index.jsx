@@ -45,7 +45,7 @@ export default function Plantation() {
           marginBottom:
             Platform.OS === 'ios'
               ? `${RFPercentage(3)}%`
-              : `${RFPercentage(4)}%`,
+              : `${RFPercentage(5)}%`,
         }}
         data={products}
         renderItem={({ item, index }) => (

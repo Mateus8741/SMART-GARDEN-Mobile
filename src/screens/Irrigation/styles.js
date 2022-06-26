@@ -32,11 +32,3 @@ export const TextCard = styled.Text`
   font-weight: 900;
   font-weight: bold;
 `;
-
-export const Separator = styled.View`
-  width: 90%;
-  height: 1px;
-  margin: 5px auto;
-  margin-bottom: 10px;
-  background-color: ${colorWhite};
-`;

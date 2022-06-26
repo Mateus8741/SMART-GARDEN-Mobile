@@ -1,7 +1,7 @@
 import bananas from '../../assets/irrigation/bananas.jpg';
 import pumpkins from '../../assets/irrigation/pumpkins.jpg';
 import lettuce from '../../assets/irrigation/lettuce.jpg';
-import cilandro from '../../assets/irrigation/cilandro.jpg';
+import cilantro from '../../assets/irrigation/cilantro.jpg';
 
 export const irrigations = [
   {
@@ -16,7 +16,7 @@ export const irrigations = [
     id: 3,
     nome: 'Coentro',
     horario: '03:30pm',
-    img: cilandro,
+    img: cilantro,
     area: '6m²',
     estado: 'Não irrigado',
   },

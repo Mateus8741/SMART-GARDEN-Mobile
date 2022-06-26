@@ -11,12 +11,12 @@ import 'moment/locale/pt-br';
 
 export default function ThisMonth() {
   moment.locale('pt-br');
-  const getNameMonth = (date) => moment(date).format('MMMM');
+  const thisMonth = moment(new Date()).format('MMMM');
 
   return (
     <Layout>
       <TitleScreens style={{ padding: 10 }}>
-        O que plantar em {getNameMonth(new Date())} ?
+        O que plantar em {thisMonth} ?
       </TitleScreens>
       <FlatList
         style={{
